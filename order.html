@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+	<nav>
+		<div class="menu">
+			<a href="main.html"><img class="navlogo" src="logo.png"></a>
+			 <ul>
+			  <li><a href="home.html">Home</a></li>
+			  <li  class="active"><a href="order.html">Order Now</a></li>
+			  <li><a href="contact.html">Contact Us</a></li>
+			</ul> 
+		</div>
+	</nav>
+	<div class="frmo">
+		<form>
+			<h1>Your Order</h1>
+			<input type="Email" placeholder="Enter Email"required>
+			<input type="Text" placeholder="Enter Name"required>
+			<input type="tel" name="telphone"  pattern="[0-9]{10}"  Placeholder="Enter Contact Number" required/> 
+			<select name="order" required>
+				<option value=""hidden>Select Cake</option>
+			  <option value="pc">Pineapple Cake</option>
+			  <option value="scc">Strawberry chocolate cupcakes</option>
+			  <option value="dcst">Dark chocolate sea-salt tart</option>
+			  <option value="nc">Nutella cake</option>
+			  <option value="nc">Classic chocolate cake</option>
+			  <option value="nc">Chocolate popcorn cake</option>
+			</select>  
+			<select name="Quantity" required>
+				<optgroup label="Cakes">
+				<option value=""hidden>Select Quantity</option>
+				  <option value="500">500g</option>
+				  <option value="1">1kg</option>
+				  <option value="2">2kg</option>
+				  <option value="3">3kg</option>
+				  <option value="5">5kg</option>
+				</optgroup>
+				<optgroup label="Cupcakes">
+					<option value="6">6</option>
+					<option value="12">12</option>
+					<option value="24">24</option>	
+				</optgroup>
+			</select> 
+
+			<textarea placeholder="Special instructions"></textarea> <br>
+			<button class="btn" onclick="alert('Your order has been recorded, please wait for your confirmation mail.')">Submit</button>
+		</form>
+	</div>
+</body>
+</html> 
